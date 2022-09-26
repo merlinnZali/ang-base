@@ -1,0 +1,95 @@
+
+
+{{title}}
+<br><br>
+<input type="text" [class.bg-warning]="warningField()" value="I am a warning field" >
+
+
+
+<br><br>
+<span>Detecting windows resizing</span>
+<br>
+<div class="container text-center mt-5">
+    <div class="row">
+        <p>Window width: <strong>{{ getScreenWidth }}</strong></p>
+        <p>Window height: <strong>{{ getScreenHeight }}</strong></p>
+    </div>
+    <div class="row">dropdown with POPPER.js</div>
+    <div class="row">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="row">dropdown with NG-BOOTSTRAP</div>
+    <div class="row">
+        <div ngbDropdown class="dropdown">
+            <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuButton1" aria-expanded="false">
+          Dropdown button
+          </button>
+            <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+              <li><a ngbDropdownItem href="#">Action</a></li>
+              <li><a ngbDropdownItem href="#">Another action</a></li>
+              <li><a ngbDropdownItem href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <span>Bootstrap icon</span>
+    </div>
+    <div class="row">
+        <button>click me<i class="bi bi-star-fill"></i></button>
+    </div>
+    <div class="row">
+        <i class="bi bi-star-fill" style="font-size: 32px; color: green; text-shadow: 1px 1px 1px #ccc;"></i>
+    </div>
+    <div class="row">
+        <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="bootstrap-icons.svg#star-fill"/>
+           </svg>
+    </div>
+
+    <hr>
+    <br>
+    <div class="row">
+        <span>FortAwesome icon</span>
+    </div>
+    <div class="row">
+        <div style="text-align:center">
+            <h2>Using Solid Icons</h2>
+            <fa-icon [icon]="['fas', 'square']"></fa-icon>
+            <br />
+            <fa-icon [icon]="['fas', 'check-square']"></fa-icon>
+          </div>
+          <hr />
+          <div style="text-align:center">
+            <h2>Using Regular Icons</h2>
+            <fa-icon [icon]="['far', 'square']"></fa-icon>
+            <br />
+            <fa-icon [icon]="['far', 'check-square']"></fa-icon>
+          </div>
+          <hr />
+          <div style="text-align:center">
+            <h2>Using Brand Icons</h2>
+            <fa-icon [icon]="['fab', 'stack-overflow']"></fa-icon>
+            <br />
+            <fa-icon [icon]="['fab', 'github']"></fa-icon>
+            <br />
+            <fa-icon [icon]="['fab', 'medium']"></fa-icon>
+          </div>
+    </div>
+    <br>
+    <div>
+        <fa-icon [icon]="['fas', 'coffee']" flip="vertical"
+        [border]="true" [styles]="{'stroke': 'red', 'color': 'red'}" size="6x"></fa-icon>
+    </div>
+    <br>
+</div>
